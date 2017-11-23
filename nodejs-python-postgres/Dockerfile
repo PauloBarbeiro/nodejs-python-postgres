@@ -10,9 +10,9 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 RUN apt-get install -y nodejs
 RUN apt-get install postgresql-9.5 -y
 RUN apt-get install python3 -y
-#RUN apt-get install python3-pip -y
 RUN curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3
 RUN apt-get install -y zip
 RUN apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install -y default-jre
 RUN apt-get install -y git
+RUN apt-get install -y bzip2
