@@ -1,12 +1,12 @@
 
 FROM beevelop/base
 
-MAINTAINER Denis Danielyan <denis.danielyan@gravityandstorm.de>
+MAINTAINER Paulo Barbeiro <paulo.barbeiro@rentics.de>
 
 RUN apt-get update
 RUN apt-get install sudo -y
 RUN apt-get install curl -y
-RUN curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 RUN apt-get install -y nodejs
 RUN apt-get install postgresql-9.5 -y
 RUN apt-get install python3 -y
